@@ -1,3 +1,3 @@
 # CI Test
 
-[![Build status](https://ci.appveyor.com/api/projects/status/q1hhshf527jw19u6?svg=true)](https://ci.appveyor.com/project/allvb/new-types)
+[![Build status](https://ci.appveyor.com/api/projects/status/n90i54n0sng6xuj9?svg=true)](https://ci.appveyor.com/project/allvb/total-amount)
