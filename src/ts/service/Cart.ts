@@ -12,11 +12,7 @@ export default class Cart {
     }
 
     totalAmount(): number {
-        let totalAmount = 0;
-        for (let item of this.items) {
-            totalAmount += item.price ;
-        }
-        return totalAmount;
+        return this.items.reduce((acc, item) => acc + item.price, 0);
     }
 
     amountWithDiscount(discount: number): number {
@@ -26,6 +22,6 @@ export default class Cart {
     }
 
     deleteItem(id: number): void {
-        this._items = this.items.filter((elem) => elem.id !== id);
+        this._items = this.items.filter((elem: Buyable) => elem.id !== id);
     }
 }
